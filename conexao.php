@@ -1,9 +1,11 @@
 <?php
 
-$usuario = 'root';
-$senha = 'Kaio1412';
+$usuario = 'root'; // Ajuste o usuário se necessário
+$senha = 'Kaio1412';       // Deixe vazio '' se for XAMPP, ou coloque a senha do Workbench
 $dbname = 'gerartxt';
 $host = 'localhost';
+
+// Mude aqui se o seu Workbench estiver mostrando 3307 por exemplo:
 $port = 3306;
 
 try {
