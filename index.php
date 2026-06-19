@@ -30,7 +30,7 @@
       <textarea id="conteudo7" name="observacao" rows="4" cols="30">Texto exemplo</textarea>
     <br>
     <button id="btnSalvar" type="button">Salvar .TXT</button>
-    <button type="submit">Enviar cadastro</button>
+<button type="submit">Enviar cadastro</button>
     </form>
     <script src="sketch.js"></script>
   </body>
