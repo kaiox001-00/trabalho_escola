@@ -9,7 +9,7 @@
   </head>
   <body>
     <h3>Conteúdo do arquivo</h3>
-    <form action ="/processar_cadastro" method="post">
+    <form action="criar_usuario.php" method="post">
       <label for="nome">nome</label>
       <input type="text" id="conteudo1" name="nome" placeholder="digite seu nome" required><br>
       
@@ -24,12 +24,14 @@
       
       <label>genero</label>
       <input type="radio" id="conteudo5" name="genero" value="masculino">
-      <label for="masc">masculino</label>
+      <label for="masculino">masculino</label>
       <input type="radio" id="conteudo6" name="genero" value="feminino">
-      <label for="fem">feminino</label>
-      <textarea id="conteudo7" rows="4" cols="30">Texto exemplo</textarea>
+      <label for="feminino">feminino</label>
+      <textarea id="conteudo7" name="observacao" rows="4" cols="30">Texto exemplo</textarea>
     <br>
-    <button id="btnSalvar">Salvar .TXT</button>
+    <button id="btnSalvar" type="button">Salvar .TXT</button>
+    <button type="submit">Enviar cadastro</button>
+    </form>
     <script src="sketch.js"></script>
   </body>
 </html>
