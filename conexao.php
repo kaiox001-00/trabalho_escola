@@ -1,12 +1,10 @@
 <?php
 
-$usuario = 'root'; // Ajuste o usuário se necessário
-$senha = 'Kaio1412';       // Deixe vazio '' se for XAMPP, ou coloque a senha do Workbench
-$dbname = 'gerartxt';
+$usuario = 'root'; // Geralmente é root
+$senha = 'Kaio1412'; // Coloque aqui a senha que você usa para entrar no Workbench
+$dbname = 'gerartxt'; // Nome do banco que criamos no Workbench
 $host = 'localhost';
-
-// Mude aqui se o seu Workbench estiver mostrando 3307 por exemplo:
-$port = 3306;
+$port = 3306; // Verifique no Workbench se a sua porta é 3306 ou 3307
 
 try {
     $pdo = new PDO("mysql:host={$host};port={$port};dbname={$dbname};charset=utf8mb4", $usuario, $senha);
