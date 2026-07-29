@@ -5,10 +5,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = trim($_POST['nome'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $senha = $_POST['senha'] ?? '';
-    $nascimento = $_POST['nascimento'] ?? null;
+    
+    // Converte string vazia em NULL para não dar erro no MySQL
+    $nascimento = !empty($_POST['nascimento']) ? $_POST['nascimento'] : null;
+    
     $genero = $_POST['genero'] ?? '';
     $observacao = trim($_POST['observacao'] ?? '');
 
+    // Verifica se os campos obrigatórios foram preenchidos
     if ($nome === '' || $email === '' || $senha === '' || $genero === '') {
         header('Location: index.php?error=missing');
         exit;

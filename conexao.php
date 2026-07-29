@@ -1,10 +1,10 @@
 <?php
 
-$usuario = 'root'; // Geralmente é root
-$senha = 'Kaio1412'; // Coloque aqui a senha que você usa para entrar no Workbench
-$dbname = 'gerartxt'; // Nome do banco que criamos no Workbench
+$usuario = 'root'; 
+$senha = 'Kaio1412'; // Certifique-se de que esta é a senha correta do seu MySQL
+$dbname = 'gerartxt'; 
 $host = 'localhost';
-$port = 3306; // Verifique no Workbench se a sua porta é 3306 ou 3307
+$port = 3306; // Altere para 3307 se o seu MySQL Workbench usar essa porta
 
 try {
     $pdo = new PDO("mysql:host={$host};port={$port};dbname={$dbname};charset=utf8mb4", $usuario, $senha);
